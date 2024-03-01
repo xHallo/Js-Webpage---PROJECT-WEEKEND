@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="progress.css">
+  </head>
+  <body>
+    <a href="homepage.html" id="backtohomepage">Back</a>
+    <h1>Keep Track Of Your Progress</h1>
+    <form>
+      <div class="input-row">
+        <label for="pushups">Pushups</label>
+        <input type="number" name="pushups" id="pushups"/>
+      </div>
+      <div class="input-row">
+        <label for="situps">Situps</label>
+        <input type="number" name="situps" id="situps" />
+      </div>
+      <div class="input-row">
+        <label for="run">2.4km Run</label>
+        <input type="number" name="runmin" id="runmin" class="runtime" placeholder="min"/>
+        <input type="number" name="runsec" id="runsec" class="runtime" placeholder="sec"/>
+      </div>
+      <div class="input-row">
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" />
+      </div>
+      
+      <button id="submitbutton">Submit</button>
+    </form>
+    <table>
+      <caption>See your improvements!</caption>
+      <thead>
+        <tr>
+          <th>Pushups</th>
+          <th>Situps</th>
+          <th>2.4km Run</th>
+          <th>Date</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <script src="progress.js"></script>
+  </body>
+</html>

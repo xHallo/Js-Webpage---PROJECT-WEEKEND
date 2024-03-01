@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <title>Project Weekend</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/135bf188ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+      <div class="formbox">
+        <div class = "signinform">
+          <h1>Sign in</h1>
+          <div class="input-field">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Username" class="inputbox" id="inputuser"required>
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" class="inputbox" id="inputpass" required>
+          </div>
+          <div class="submitbuttons">
+            <button type="button" class="loginbtn btn" onclick="login()" id="logininput">Log In</button>
+          </div>
+          <div class="actionwords">
+            <p class="forgotpass">Forgot your Password? <a href="#">Click Here</a></p>
+            <p class="noaccount"> No account?<a class="signup-link" href="#"onclick="registerpage()">Sign up</a></p>
+          </div>
+        </div>
+        <div class = "regform">
+          <h1>Register</h1>
+          <div class="input-field">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Username" class="inputbox" required>
+          </div>
+          <div class="input-field emailbox">
+            <i class="fa-solid fa-envelope emailbox"></i>
+            <input type="Email" placeholder="Email" class="inputbox emailbox" required>
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" class="inputbox" required>
+          </div>
+          <div class="submitbuttons">
+            <button type="button" class="regbtn btn">Register</button>
+          </div>
+          <div class="actionwords">
+            <p class="haveaccount"> Have an account?<a class="login-link" href="#" onclick="signinpage()">Sign in</a></p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+

@@ -1,0 +1,187 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(30, 176, 196);
+}
+
+.container{
+    background-color: rgb(15, 147, 165);
+    width: 40%;
+    min-width: 500px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 450px 0 50px 0;
+
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.timerDisplay{
+  position: relative;
+  width: 92%;
+  background: #ffffff;
+  left: 4%;
+  padding: 40px 0;
+  font-family: 'Roboto mono',monospace;
+  color: #0381bb;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0,139,253,0.25);
+}
+.buttons{
+  width: 90%;
+  margin: 60px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons button{
+  width: 120px;
+  height: 65px;
+  background-color: #205e94;
+  color: #ffffff;
+  border: none;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.buttons button:first-child{
+  background-color: #d23332;
+
+
+}
+.buttons button:nth-last-child(2){
+  width: 30%;
+  background-color: #205e94;
+}
+.buttons button:nth-last-child(1){
+  background-color: #20b380;
+}
+
+.musicbars{
+  display: inline-flex;
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+.musicbars .bar{
+  width: 12px;
+  height: 120px;
+  background-color: white;
+  border-radius: 10px;
+}
+.baranimation {
+  animation: movement 1.5s ease-in-out infinite;
+}
+@keyframes movement {
+  0%, 100% {
+    height: 120px;
+  }
+
+  50%{
+    height: 2px;
+  }
+}
+
+.musicbars .bar:nth-child(1){
+  background-color: blue;
+  animation-delay: 1s;
+}
+.musicbars .bar:nth-child(2){
+  background-color: blue;
+  animation-delay: 0.8s;
+}
+.musicbars .bar:nth-child(3){
+  background-color: blue;
+  animation-delay: 0.6s;
+}
+.musicbars .bar:nth-child(4){
+  background-color: rgb(177, 23, 23);
+  animation-delay: 0.4s;
+}
+.musicbars .bar:nth-child(5){
+  background-color: rgb(177, 23, 23);
+  animation-delay: 0.2s;
+}
+.musicbars .bar:nth-child(6){
+  background-color: rgb(177, 23, 23);
+  animation-delay: 0s;
+}
+.musicbars .bar:nth-child(7){
+  background-color: purple;
+  animation-delay: 0s;
+}
+.musicbars .bar:nth-child(8){
+  background-color: purple;
+  animation-delay: 0.2s;
+}
+.musicbars .bar:nth-child(9){
+  background-color: purple;
+  animation-delay: 0.4s;
+}
+.musicbars .bar:nth-child(10){
+  background-color: rgb(64, 216, 64);
+  animation-delay: 0.6s;
+}
+.musicbars .bar:nth-child(11){
+  background-color: rgb(64, 216, 64);
+  animation-delay: 0.8s;
+}
+.musicbars .bar:nth-child(12){
+  background-color: rgb(64, 216, 64);
+  animation-delay: 1s;
+}
+
+.workoutpause{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  text-wrap:wrap; 
+  width: 80%;
+  font-size: 70px;
+  visibility: hidden;
+}
+.workoutbegin{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  text-wrap:wrap; 
+  width: 80%;
+  font-size: 70px;
+  color: #000000;
+
+  
+}
+
+#backtohomepage{
+  background-color: #205e94;
+  color: white;
+  width: 120px;
+  font-size: 30px;
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  border: 2px #113552 solid;
+}

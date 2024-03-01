@@ -1,0 +1,167 @@
+body{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+.container{
+  background-color: rgb(30, 176, 196);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content:start;
+  flex-wrap: wrap;
+  padding-top:100px;
+}
+
+
+
+.workoutbox{
+  position: relative;
+  background-color: rgb(15, 147, 165);
+  margin: 1% 2% 5% 2%;
+  padding: 0;
+  width: 250px;
+  height: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#backtohomepage{
+  background-color: #205e94;
+  border: 2px #113552 solid;
+  color: white;
+  width: 120px;
+  font-size: 30px;
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.workoutname{
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bolder;
+  padding: 5px 0;
+}
+
+.workoutlink{
+  background-color: wheat;
+  position: absolute;
+  color: rgb(18, 57, 102);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  width: 80%;
+  height: 25%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 40px;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.workoutlink:hover{
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.192) ;
+  color: whitesmoke;
+}
+
+.plankimg{
+  max-width: 100%;
+  position:relative;
+  top:-60px;
+
+} 
+
+.sideplankimg{
+  display: block;
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 80%;
+}
+
+.squatsimg{
+  display: block;
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 60%;
+
+} 
+
+.pushupsimg{
+  display: block;
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+
+} 
+
+.jumpingjacksimg{
+  display: block;
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+} 
+
+.situpsimg{
+  display: block;
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+
+} 
+
+.russiantwistsimg{
+  display: block;
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+
+} 
+
+.bicyclecrunchesimg{
+  display: block;
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+
+} 
+
+.legraisesimg{
+  display: block;
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+
+} 
+
+.bicepcurlsimg{
+  display: block;
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+
+} 

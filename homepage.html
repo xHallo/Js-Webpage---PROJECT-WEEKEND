@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <title>Home</title>
+  <link rel="stylesheet" href="homepage.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <button onclick="backtosignin()" class="logout">Logout</button>
+    <img src="images/muscleman.png" alt="" class="musclemanimg">
+    <header class="mainpageheader">
+      <h1>PROJECT WEEKEND</h1>
+      <button type="button" class="menubutton" onclick="opensidenav()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <div id="mySidenav" class="sidenav">
+      <div class = sidenavbuttons>
+        <a href="javascript:void(0)" class="sidenavbutton closebtn" onclick="closesidenav()">&times;</a>
+        <a href="homepage.html" class="sidenavbutton">Workout</a>
+        <a href="progress.html" class="sidenavbutton">Progress</a>
+        <a href="demonstration.html" class="sidenavbutton">Demostration</a>
+        <div class="dropdown">
+          <a href ="#" class="dropdownbtn">Gaming </a>
+          <div class="dropdowncontent">
+            <a href="#" onclick="openhydration()">Hydration</a>
+            <a href="#" onclick="openbreak()">Break</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="workoutselector">
+      <a href="selfworkout.html" class="selfworkout">
+        <img src="images/jumping jack.png" alt="" class="selfworkoutimg">
+        <p>
+          Do your own workout
+        </P>
+      </a>
+      <a href="ownworkout.html" class="suggestworkout">
+        <img src="images/suggest.png" alt="" class="suggestworkoutimg">
+        <p>
+          Suggest a workout
+        </P>
+      </a>
+    </div>
+    <div class="QOTDwrapper">
+      <div class="content">
+        <div class="quote-area">
+          <i class="fas fa-quote-left"></i>
+          <p class="quote">Never give up because you never know if the next try is going to be the one that works.</p>
+          <i class="fas fa-quote-right"></i>
+        </div>
+        <div class="qotdbuttons">
+          <div class="features">
+            <ul>
+              <li class="speech"><i class="fas fa-volume-up"></i></li>
+              <li class="copy"><i class="fas fa-copy"></i></li>
+            </ul>
+            <button class="" name="randomquote" onclick="randomQuote()">New Quote</button>
+            <div class="author">
+              <span>__</span>
+              <span class="authorname">Mary Kay Ash</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hydrationpopup">
+      <input type="checkbox" id="hydrationswitch" value="checked" onchange="hydrationcheckbox()"/>
+      <a href="javascript:void(0)" class="closebtn" id="hydrationclose" onclick="closehydration()">&times;</a>
+      <img src="images/water.png" alt="" class="waterimg">
+      <h1>Hydration Intervals</h1>
+      <select name="hydrationregime" class="hydrationregime" onchange="hydratealarm()">
+        <option selected class="" value="900000" >15 minutes</option>
+        <option class="" value="1800000" >30 minutes</option>
+        <option class="" value="2700000" >45 minutes</option>
+      </select>
+      <p>Recommended interval: 15 minutes</p>
+
+    </div>
+    <div class="breakpopup">
+      <input type="checkbox" id="breakswitch" value="checked" onchange="breakcheckbox()"/>
+      <a href="javascript:void(0)" class="closebtn" id="breakclose" onclick="closebreak()">&times;</a>
+      <img src="images/rest.png" alt="" class="breakimg">
+      <h1>Break intervals</h1>
+      <select name="breakinterval" class="breakinterval" onchange="breakalarm()">
+        <option selected class="" value="3600000">1 hour</option>
+        <option class="" value="7200000" >2 hour</option>
+        <option class="" value="10800000">3 hour</option>
+      </select>
+      <p>Recommended interval: 1 hour</p>
+
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/135bf188ed.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
