@@ -19,7 +19,7 @@ function signinpage(){
 function login(){
   let inputuser = document.getElementById("inputuser").value;
   let inputpassword = document.getElementById("inputpass").value;
-  if(inputuser==="cuitao" && inputpassword==="admin"){
+  if(inputuser==="Projectweekend" && inputpassword==="admin"){
     location.replace("homepage.html");
   }
   else{
