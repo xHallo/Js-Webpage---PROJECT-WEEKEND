@@ -14,5 +14,6 @@ PROJECT WEEKEND has multiple features, namely:
 4. Random Workout Generator with Music, AI speech, and Timer
 5. Feature to alert users at regular intervals to Drink Water/Rest
 6. Demonstration for Different Workouts used in Random Workout Generator
+7. Feature to track fitness progress in a table that is saved upon exit
 
 Have fun playing with these features!
