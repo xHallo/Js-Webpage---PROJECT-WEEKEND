@@ -47,7 +47,7 @@ vertical-align: middle;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 30px rgba(0, 0, 0, 5);
-  height:450px;
+  height:550px;
   transition: all 0.5s ease;
   overflow:hidden;
 }
@@ -78,7 +78,7 @@ vertical-align: middle;
 
 
 .regform{
-  height: 400px;
+  height: 550px;
   width: 90%;
   width: 420px;
   position: absolute;
@@ -86,11 +86,9 @@ vertical-align: middle;
   top: 50%;
   left: 150%;
   transform: translate(-50%,-50%);
-  height:450px;
   transition: all 0.5s ease;
 }
 .signinform{
-  height: 400px;
   width: 90%;
   width: 420px;
   position:absolute;
@@ -98,7 +96,7 @@ vertical-align: middle;
   top:50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  height:450px;
+  height:500px;
   transition: all 0.5s ease;
 }
 
@@ -142,11 +140,12 @@ input{
   letter-spacing: 1px;
 }
 .actionwords p{
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 200;
   color: #e6e1e1a8;
   justify-content: space-between;
 
+  
 }
 
 .forgotpass{
@@ -158,6 +157,8 @@ input{
 .haveaccount{
   width: auto;
   text-align: center;
+  display: inline;
+  
 }
 .noaccount{
   width: auto;
